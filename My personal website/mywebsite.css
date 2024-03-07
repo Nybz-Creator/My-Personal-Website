@@ -1,0 +1,24 @@
+
+.nav link.active {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.nav link {
+  font-size: 16px;
+  line-height: 130;
+  font-weight: 400;
+}
+
+.nav__link:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: #3e3e3e;
+  left: 16px;
+  right: 16px;
+  bottom: 8px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s cubic-bezier(.27,0,0,1);
+}
