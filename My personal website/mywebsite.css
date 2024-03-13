@@ -1,15 +1,46 @@
+/* Author: Alexander Grönlund EEDAT2 */
 
-.nav link.active {
-  opacity: 1;
-  font-weight: 500;
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
 }
 
-.nav link {
+/* .navbar {
+  color: black;
+  text-align: right;
+  margin-top: 50px;
   font-size: 16px;
-  line-height: 130;
   font-weight: 400;
+} */
+
+.vertical-menu {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 40px;
+  text-align: right;
 }
 
+.vertical-menu li {
+  display: block;
+}
+
+.vertical-menu li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.vertical-menu li a:hover {
+  background-color: #ddd;
+}
+
+.vertical-menu li a:active {
+  background-color: #991010;
+}
+ 
 .nav__link:before {
   content: "";
   position: absolute;
@@ -21,4 +52,30 @@
   transform: scaleX(0);
   transform-origin: left;
   transition: transform .5s cubic-bezier(.27,0,0,1);
+}
+
+ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.sticky {
+  position: fixed;
+}
+
+.hero_headline {
+  opacity: 1;
+  font-size: xx-large;
+  margin-left: 300px;
+}
+
+.page_text {
+  margin: 100px;
+  padding: 20px;
+  padding-top: 10px;
+  margin-right: 600px;
+  height: 800px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px;
+
 }
