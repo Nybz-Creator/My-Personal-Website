@@ -75,7 +75,7 @@ img {
 }
 
 ul {
-  list-style: none;
+  list-style: none;https://www.youtube.com/watch?v=ycDUU1n2iEE
   margin-top: 50px;
 }
 
@@ -96,13 +96,20 @@ ul {
   height: 800px;
   background-color: rgb(212, 212, 212);
   border-radius: 10px;
-
 }
 
 #myBtn {
-  
+  cursor: pointer;
+  border-color: black;
+  border-radius: 8px;
+  background-color: rgb(212, 212, 212);
+  color: rgb(0, 0, 0);
+  z-index: 99;
+  padding: 15px;
+  right: 500px;
+  bottom: 500px;
 }
 
 #myBtn:hover {
-  
+  background-color: rgb(148, 147, 147);
 }
