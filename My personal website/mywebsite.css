@@ -20,6 +20,7 @@ body {
   margin: 0;
   padding-top: 40px;
   text-align: right;
+  overflow: hidden;
 }
 
 .vertical-menu li {
@@ -75,18 +76,23 @@ img {
 }
 
 ul {
-  list-style: none;https://www.youtube.com/watch?v=ycDUU1n2iEE
+  list-style: none;
   margin-top: 50px;
 }
 
 .sticky {
   position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 40px;
+  text-align: right;
 }
 
 .hero_headline {
   opacity: 1;
   font-size: xx-large;
   margin-left: 300px;
+  width: 500px;
 }
 
 .main_content_container {
@@ -98,18 +104,60 @@ ul {
   border-radius: 10px;
 }
 
-#myBtn {
-  cursor: pointer;
-  border-color: black;
-  border-radius: 8px;
-  background-color: rgb(212, 212, 212);
-  color: rgb(0, 0, 0);
-  z-index: 99;
-  padding: 15px;
-  right: 500px;
-  bottom: 500px;
+#StorBox { /* ID Är unik, finns bara en */
+  margin: 6px; /* Utrymme runtomkring taggen. */
+  padding: 10px; /* indrag innuti taggen */
+  border-color: red;
+	border-width: 4px;
+	border-style: solid;
+  border-radius: 10px;
+  background-color: pink;
 }
 
-#myBtn:hover {
-  background-color: rgb(148, 147, 147);
+label { /* Lappen bredvis varje input. */
+  font-weight: bold;
+}
+
+input[type="submit"] { /* Utseende för Bara submit taggar. */
+  font-size: 20px;
+}
+
+input { /* Alla Input taggar. */
+  margin-bottom: 10px;
+}
+
+textarea { /* Den stora textrutan. */ 
+  margin-top: 10px;
+}
+
+/* Referenser:
+https://www.w3schools.com/css/css_form.asp
+*/
+
+.back_to_top_div {
+  width: 100%;
+}
+
+/* This should style it how you want */
+#scrollTopBtn {
+  
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px;
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Correctly center the button */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  outline: none;
+  background-color: #33333300;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px;
+  border-radius: 10px;
+  transition: display 0.5s ease-in-out;
+  background-image: url(images/arrow.png); /* Path to your image */
+  background-size: cover; /* Cover the entire area of the button */
+  background-position: center; /* Center the background image */
+}
+
+#scrollTopBtn:hover {
+  background-color: rgb(146, 140, 140);
 }

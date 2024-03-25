@@ -31,20 +31,49 @@ Alexander Grönlund
     <div class="hero_headline">
 
      <h1 class="hero_about">
-      Contact
+      Contact me
      </h1>
 
     </div>
 
+    <form id="StorBox"> <!-- här börjar mitt formulär. Action attributet är överkurs för webbutveckling 1 kursen, ni kan lämna det. -->
+      <h2>Kontakta oss</h2> <!-- Rubrik -->
+      <label>Namn:</label> <!-- En förklaring som hör till input taggen den sitter intill. -->
+      <input type="text" name="kundNamn"> <!-- Namn textfältet -->
+      <!-- Tänk på att ge varje input tagg ett eget name attribut. Döp den till något logiskt efter sammanhang. -->
+      <br> <!-- Radbrytning -->
+      <label>Din e-post:</label>
+      <input type="email" name="kundMail" required>
+      <!-- e-post textfältet. För att testa required (krav), lämna fältet tomt och tryck på Skicka knappen. -->
+      <br>
+      <label>Ärende:</label>
+      <select name="arendeVal"> <!-- Rullgardinsmenyn / Droplist -->
+        <option value="berom">Beröm</option> <!-- Ett val i menyn -->
+        <option value="forslag">Förslag</option>
+        <option value="onsekmal">Önskemål</option>
+      </select>
+      <br>
+       <textarea name="meddelande" rows="5" cols="40" placeholder="Skriv vad du vill oss här..."></textarea>
+       <!-- Lämna taggen tom mellan start/slut tag. Rows bestämmer höjden i antal rader, cols bredden. -->
+      <br><br>
+      <input type="submit" value="Skicka"><!-- knappen som skickar formuläret någonstanns. -->
+    </form> <!-- Här slutar mitt formulär. Alla knappar och inmnatningsfält måste finnas innuti form. -->
+    
+    <form>
+      <!-- Här är ett helt eget formulär, som inte reagerar på knappar eller textrutor från något annat formulär. -->
+    </form>
+    
+    <!-- Referenser:
+    https://www.w3schools.com/html/html_forms.asp
+    https://www.w3schools.com/html/html_form_input_types.asp
+    -->
 
-    <div class="page_text">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go back to the top of the page">
+      <img src="images/arrow.png" alt="">
+    </button>
 
-    <footer>
-      fs
+    <footer class="footer">
+      osas
     </footer>
 
   </body> 
